@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillSwap - Peer-to-Peer Learning</title>
+    <title>SkillSwap - Peer-to-Peer Student Skill Exchange</title>
 </head>
 <body>
+    <!-- Site Navigation -->
     <header>
         <nav>
             <h2>SkillSwap</h2>
@@ -21,30 +22,84 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <h1>Learn New Skills by Sharing Yours</h1>
-            <p>Connect with fellow students to exchange knowledge, tutor each other, and grow together.</p>
+            <p>Connect with fellow students to exchange knowledge, tutor each other, and grow together without financial barriers.</p>
             <a href="pages/browse.html">Explore Skills</a>
             <a href="pages/post-skill.html">Offer a Skill</a>
         </section>
 
+        <!-- Search Bar with Datalist Suggestions -->
+        <section class="quick-search">
+            <h2>Quick Skill Search</h2>
+            <form action="pages/browse.html" method="GET">
+                <label for="skill-input">Search for a skill to learn:</label>
+                <input type="text" id="skill-input" name="query" list="popular-skills" placeholder="e.g., Python, UI Design, Calculus...">
+                <datalist id="popular-skills">
+                    <option value="Python Programming">
+                    <option value="C++ Debugging">
+                    <option value="Graphic Design">
+                    <option value="Spanish Conversation">
+                    <option value="Calculus & Linear Algebra">
+                </datalist>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- How It Works Section -->
         <section class="how-it-works">
             <h2>How SkillSwap Works</h2>
             <article>
-                <h3>1. List Your Skill</h3>
-                <p>Post what you are good at, from C++ programming to graphic design.</p>
+                <figure>
+                    <figcaption>Step 1: Create a Listing</figcaption>
+                </figure>
+                <h3>List Your Skill</h3>
+                <p>Post what you are good at, from C++ programming to graphic design or language practice.</p>
             </article>
             <article>
-                <h3>2. Find a Partner</h3>
-                <p>Search for students offering skills you want to learn.</p>
+                <figure>
+                    <figcaption>Step 2: Connect</figcaption>
+                </figure>
+                <h3>Find a Partner</h3>
+                <p>Search for students offering skills you want to learn and send a swap request.</p>
             </article>
             <article>
-                <h3>3. Swap Knowledge</h3>
-                <p>Connect, schedule peer learning sessions, and trade skills.</p>
+                <figure>
+                    <figcaption>Step 3: Collaborate</figcaption>
+                </figure>
+                <h3>Swap Knowledge</h3>
+                <p>Connect online or on campus, schedule peer learning sessions, and trade skills.</p>
             </article>
+        </section>
+
+        <!-- Interactive FAQ Accordion Using <details> and <summary> -->
+        <section class="landing-faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>Is SkillSwap free for students?</summary>
+                <p>Yes, SkillSwap is 100% free! It is based entirely on peer-to-peer knowledge exchange.</p>
+            </details>
+
+            <details>
+                <summary>Do I need to be an expert to offer a skill?</summary>
+                <p>Not at all! As long as you can help a beginner understand a topic, subject, or practical tool, you can offer a skill swap.</p>
+            </details>
+
+            <details>
+                <summary>How do skill swap sessions take place?</summary>
+                <p>Students can meet up on campus, connect over Discord, Zoom, or organize study groups at a local library.</p>
+            </details>
+
+            <details>
+                <summary>How do ratings and reviews work?</summary>
+                <p>After completing a swap session, both students can leave constructive feedback and star ratings on each other's profile.</p>
+            </details>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 SkillSwap Team. Built for student collaboration.</p>
     </footer>
