@@ -8,34 +8,82 @@
   <body>
     <header>
       <h1>Student Dashboard</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="pages/browse.html">Browse Skills</a> |
+        <a href="pages/dashboard.html">Dashboard</a> |
+        <a href="pages/profile.html">Profile</a> |
+        <a href="pages/post-skill.html">Post a Skill</a> |
+        <a href="pages/about.html">About</a>
+      </nav>
     </header>
+
     <main>
+      <aside>
+        <h3>Recommended for You</h3>
+        <ul>
+          <li>Python Programming</li>
+          <li>C++ Debugging</li>
+          <li>Graphic Design</li>
+          <li>Calculus & Linear Algebra</li>
+        </ul>
+      </aside>
+
       <section class="stats-overview">
         <h2>Overview</h2>
         <p>Active Swaps: <strong>2</strong></p>
         <p>Pending Requests: <strong>1</strong></p>
       </section>
+
       <section class="swap-requests">
         <h2>Your Skill Exchanges</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Partner</th>
-              <th>Offered Skill</th>
-              <th>Requested Skill</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mohammed</td>
-              <td>HTML/CSS Basics</td>
-              <td>C++ Debugging</td>
-              <td><span>Approved</span></td>
-            </tr>
-          </tbody>
-        </table>
+
+        <article>
+          <h3>Active Requests Log</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Partner</th>
+                <th>Offered Skill</th>
+                <th>Requested Skill</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mohammed</td>
+                <td>HTML/CSS Basics</td>
+                <td>C++ Debugging</td>
+                <td><span>Approved</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
       </section>
+
+      <section class="help-section">
+        <h2>Help & Guidelines</h2>
+        <details>
+          <summary>How do hourly exchanges work?</summary>
+          <p>
+            You teach your partner your offered skill for 1 hour, and they
+            return the favor by tutoring you in theirs!
+          </p>
+        </details>
+      </section>
+
+      <dialog open>
+        <h3>Welcome Back!</h3>
+        <p>You have 1 new message regarding your C++ swap.</p>
+        <form method="dialog">
+          <button>Dismiss</button>
+        </form>
+      </dialog>
     </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2026 SkillSwap Platform. Helping students grow together.</p>
+    </footer>
   </body>
 </html>
