@@ -1,9 +1,10 @@
 # SkillSwap
 A peer-to-peer skill-sharing website that helps students discover skills, connect with learning opportunities, and share knowledge.
-GROUP 8
-Meba Abebe          0956/17
-Michael Dagnachew  1002/17
-qebso             1227/17
-Mohammad jemal   1049/17
-Mekdes Tesfaye   0963/17
-Meseret Tekle    0991/17
+## 🛡️ Group 8 Members
+* **Meba Abebe** — *ID:* 0956/17
+* **Michael Dagnachew** — *ID:* 1002/17
+* **Qebso** — *ID:* 1227/17
+* **Mohammad Jemal** — *ID:* 1049/17
+* **Mekdes Tesfaye** — *ID:* 0963/17
+* **Meseret Tekle** — *ID:* 0991/17
+
